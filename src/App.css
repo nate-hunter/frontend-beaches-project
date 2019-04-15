@@ -31,3 +31,41 @@
     transform: rotate(360deg);
   }
 }
+
+img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.beach-container {
+  display: flex;
+  text-align: center;
+}
+
+.beach-list {
+  width: 50%;
+  border: solid;
+  border-width: 1.5px;
+}
+
+.favorites {
+  width: 50%;
+  border: solid;
+  border-width: 1.5px;
+}
+
+.beach {
+  border: solid;
+  border-width: 1.5px;
+}
+
+.favorite {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 8px;
+}
