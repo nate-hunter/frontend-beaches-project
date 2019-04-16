@@ -3,10 +3,13 @@ import './App.css';
 import BeachContainer from './components/BeachContainer';
 import Favorites from './components/Favorites';
 import Form from './components/Form'
+import ReactWeather from 'react-open-weather';
+import 'react-open-weather/lib/css/ReactWeather.css';
 
 class App extends Component {
   state = {
-    beaches: []
+    beaches: [],
+    displayedBeach: null
   };
 
   componentDidMount(){
@@ -68,12 +71,20 @@ class App extends Component {
     return this.state.beaches.filter(beach => beach.favorite)
   };
 
+  handleDisplayBeach = (beach) => {
+    console.log(beach)
+  };
+
   render() {
     return (
       <div className="main">
+        <h1>OAHU BEACHES</h1>
+        <ReactWeather forecast="5days" apikey="060f9d67f5084f699d240259191504" type="city" city="Honolulu" unit="imperial"/>
         <Form handleAdd={this.handleAddNewBeach}/>
-        <BeachContainer beaches={this.state.beaches} handleClick={this.addFavoriteBeach}/>
-        <Favorites beaches={this.favoritedBeaches()} handleClick={this.removeFavoriteBeach}/>
+        <div className="beach-container">
+          <BeachContainer beaches={this.state.beaches} handleClick={this.addFavoriteBeach}/>
+          <Favorites beaches={this.favoritedBeaches()} handleClick={this.removeFavoriteBeach}/>
+        </div>
       </div>
     );
   };

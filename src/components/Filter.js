@@ -3,8 +3,8 @@ import React from 'react';
 const Filter = (props) => {
   return (
     <div className="beach-filter">
-      <h3>FILTER</h3>
-      <select onChange={props.handleChange}>
+      <h4>Select Beach by Activity</h4>
+      <select value={props.term} onChange={props.handleChange} >
         <option value="All">All</option>
         <option value="Surf">Surf</option>
         <option value="Body Surf">Body Surf</option>

@@ -40,18 +40,19 @@ img {
 .beach-container {
   display: flex;
   text-align: center;
+  padding: 50px;
 }
 
 .beach-list {
-  width: 25%;
-  border: solid;
-  border-width: 1.5px;
+  width: 75%;
+  /* border: solid;
+  border-width: 1.5px; */
 }
 
 .favorites {
   width: 25%;
-  border: solid;
-  border-width: 1.5px;
+  /* border: solid;
+  border-width: 1.5px; */
 }
 
 .beach {
@@ -79,4 +80,18 @@ img {
   text-decoration: none;
   display: inline-block;
   font-size: 8px;
+}
+
+.list-header {
+  background-color: #4ECAFE;
+  color: white;
+  padding: 20px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 28px;
+}
+
+.change-this {
+  display: flex;
 }

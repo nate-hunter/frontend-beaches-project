@@ -9,8 +9,8 @@ const BeachList = (props) => {
 
 
   return(
-    <div className="beach-list">
-      <h5>BEACHES</h5>
+    <div >
+      <h3 className="list-header">List of Oahu Beaches</h3>
       {beachList}
     </div>
   );

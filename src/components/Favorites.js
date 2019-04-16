@@ -10,7 +10,7 @@ class Favorites extends React.Component {
     })
     return(
       <div className="favorites">
-        <h3>favorites beaches</h3>
+        <h3 className="list-header">Favorites</h3>
         {favoritedBeaches}
       </div>
     );
