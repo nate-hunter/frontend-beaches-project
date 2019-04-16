@@ -1,4 +1,4 @@
-.App {
+.main {
   text-align: center;
 }
 
@@ -43,13 +43,13 @@ img {
 }
 
 .beach-list {
-  width: 50%;
+  width: 25%;
   border: solid;
   border-width: 1.5px;
 }
 
 .favorites {
-  width: 50%;
+  width: 25%;
   border: solid;
   border-width: 1.5px;
 }
@@ -61,6 +61,17 @@ img {
 
 .favorite {
   background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 8px;
+}
+
+.remove {
+  background-color: #000; /* Green */
   border: none;
   color: white;
   padding: 7px 15px;
