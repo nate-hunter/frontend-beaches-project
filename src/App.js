@@ -71,7 +71,6 @@ class App extends Component {
   render() {
     return (
       <div className="main">
-        <h1>BEACHES:</h1>
         <Form handleAdd={this.handleAddNewBeach}/>
         <BeachContainer beaches={this.state.beaches} handleClick={this.addFavoriteBeach}/>
         <Favorites beaches={this.favoritedBeaches()} handleClick={this.removeFavoriteBeach}/>
